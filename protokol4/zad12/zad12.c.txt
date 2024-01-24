@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+	int a,b,c,d;
+	printf("Input A:");
+	scanf("%d",&a);
+	printf("Input B:");
+	scanf("%d",&b);
+	printf("Input C:");
+	scanf("%d",&c);
+	printf("Input D:");
+	scanf("%d",&d);
+	if((a==b)&&(c=d))||((a==c)&&(b==d))||((a==d)&&(b==c)) printf("ABCD is Parallelogram");
+	else ("ABCD is not Parallelogram");
+}

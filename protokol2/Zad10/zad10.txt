@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    float floatValue;
+    char charValue;
+    int intValue;
+
+    // Input values from the user
+    printf("Enter a float value: ");
+    scanf("%f", &floatValue);
+    printf("Enter a char value: ");
+    scanf(" %c", &charValue);  // Note the space before %c
+    printf("Enter an int value: ");
+    scanf("%d", &intValue);
+
+    // Display the entered values
+    printf("Entered values are: float=%.2f, char=%c, int=%d\n", floatValue, charValue, intValue);
+
+    // Decrement and assign
+    // First option: prefix decrement
+    floatValue = --floatValue;
+    charValue = --charValue;
+    intValue = --intValue;
+
+    // Display the values after prefix decrement
+    printf("After prefix decrement: float=%.2f, char=%c, int=%d\n", floatValue, charValue, intValue);
+
+    // Reset the entered values
+    printf("Enter float, char, and int values: ");
+    scanf("%f %c %d", &floatValue, &charValue, &intValue);
+
+    // Second option: postfix decrement
+    floatValue = floatValue--;
+    charValue = charValue--;
+    intValue = intValue--;
+
+    // Display the values after postfix decrement
+    printf("After postfix decrement: float=%.2f, char=%c, int=%d\n", floatValue, charValue, intValue);
+
+    return 0;
+}
